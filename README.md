@@ -1,30 +1,20 @@
-
-
-\# Local AI Chat
-
-
+# Local AI Chat
 
 A lightweight, locally hosted AI chatbot powered by Qwen3 and llama.cpp with NVIDIA CUDA acceleration.
 
+## Features
 
+- GPU-accelerated LLM inference
 
-\## Features
+- Real-time token streaming
 
-\- GPU-accelerated LLM inference
+- Persistent conversation history during sessions
 
-\- Real-time token streaming
+- Configurable GGUF models
 
-\- Persistent conversation history during sessions
+- No external inference API required
 
-\- Configurable GGUF models
-
-\- No external inference API required
-
-
-
-\## Setup
-
-
+## Setup
 
 ```bash
 
@@ -32,15 +22,9 @@ pip install -r requirements.txt
 
 ```
 
-
-
 > NVIDIA CUDA users may need a CUDA-enabled build of `llama-cpp-python`.
 
-
-
-\## Run
-
-
+## Run
 
 ```bash
 
@@ -48,17 +32,8 @@ python main.py
 
 ```
 
-
-
 Type `exit` or `quit` to end the session.
 
-
-
-\## Tech Stack
-
-
+## Tech Stack
 
 Python · llama-cpp-python · Qwen3 · CUDA · Hugging Face
-
-
-
