@@ -1,4 +1,4 @@
-# Local AI Chat
+# Local AI Chat 💬
 
 A lightweight, locally hosted AI chatbot powered by Qwen3 and llama.cpp with NVIDIA CUDA acceleration.
 
