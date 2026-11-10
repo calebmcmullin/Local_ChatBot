@@ -1,0 +1,54 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local LLM models and weights
+*.gguf
+*.ggml
+*.safetensors
+*.bin
+models/
+.cache/
+huggingface/
+
+# IDE configuration
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Local application data
+*.db
+*.sqlite
+*.sqlite3
