@@ -32,8 +32,6 @@ python main.py
 
 ```
 
-Type `exit` or `quit` to end the session.
-
 ## Tech Stack
 
 Python · llama-cpp-python · Qwen3 · CUDA · Hugging Face
