@@ -1,5 +1,7 @@
-from core.completions import stream_no_think
-from core.models import qwen3_14b
+from core.completions import completion_no_think
+from core.models import load_model
+
+model = load_model("qwen3-4b")
 
 history = [
     {"role": "system", "content": "You are a helpful assistant. /no_think"}
@@ -16,6 +18,10 @@ while True:
 
     history.append({"role": "user", "content": message})
 
-    content = stream_no_think(qwen3_14b, history)
+    content = completion_no_think(
+        model=model,
+        message=history,
+        max_tokens=4080
+    )
 
     history.append({"role": "assistant", "content": content})

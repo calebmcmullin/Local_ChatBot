@@ -1,6 +1,6 @@
 from llama_cpp.llama import Llama
 
-def stream_no_think(model: Llama, message: str) -> str:
+def completion_no_think(model: Llama, message: list[dict], max_tokens: int=512, stream: bool=True) -> str:
     stream = model.create_chat_completion(
         messages=[
             {
@@ -8,8 +8,8 @@ def stream_no_think(model: Llama, message: str) -> str:
                 "content": f"/no_think\n{message}"
             }
         ],
-        max_tokens=512,
-        stream=True
+        max_tokens=max_tokens,
+        stream=stream
     )
 
     content = ""
